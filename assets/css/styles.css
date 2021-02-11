@@ -1,0 +1,660 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p, a {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+
+.flex {
+	display: flex;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+header {
+	padding-top: 45px;
+	margin-bottom: 150px;
+}
+
+header .flex {
+	justify-content: space-between;
+    align-items: center;
+}
+
+header nav .close {
+	display: none;
+}
+
+header nav a {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	text-decoration: none;
+	margin-right: 15px;
+}
+
+
+
+header nav a.btn-azul_pd {
+	border-radius: 7px;
+	background: #1A448F;
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 14px;
+	letter-spacing: 2.87px;
+	line-height: 17px;
+}
+
+header nav a.btn-azul_pd.login {
+	margin-left: 80px;
+	margin-right: 20px;
+	padding: 6px 10px 6px 15px;
+}
+
+header nav a.btn-azul_pd.contacto {
+	padding: 6px 25px 6px 15px; 
+}
+
+
+section.quepago {
+	margin-bottom: 200px;
+}
+
+section.quepago .container div {
+	width: 40%;
+	padding-top: 20px;
+}
+
+section.quepago .container figure {
+	width: 60%;
+}
+
+
+section.quepago .container div h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-size: 40px;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+	font-weight: 400;
+	margin-bottom: 57px;
+}
+
+section.quepago .container div p {
+	color: #333;
+	font-family: Arial;
+	font-size: 20.16px;
+	letter-spacing: 3px;
+	line-height: 23px;
+	margin-bottom: 70px;
+}
+
+
+section.quepago .container div button {
+	border-radius: 7px;
+  	background-color: #1A448F;
+  	color: #FFF;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: 3.58px;
+	line-height: 24px;
+	text-align: center;
+	height: 41px;
+  	width: 221.31px;
+	text-decoration: none;
+	margin-right: 16px;
+	border: 2px solid #1A448F;
+	cursor: pointer;
+}
+
+
+section.quepago .container div button.noactive {
+	background-color: #fff;
+	color: #018FC0;
+	border: 2px solid #018FC0;
+	cursor: pointer;
+}
+
+
+section.section-funcionamiento {
+	margin-bottom: 250px;
+}
+
+section.section-funcionamiento .container h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 40px;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+	margin-bottom: 210px;
+	text-align: center;
+}
+
+section.section-funcionamiento .container .container-funcionamiento p {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 32px;
+}
+
+
+section.section-funcionamiento .container {
+	flex-direction: column;
+}
+
+section.section-funcionamiento .container-funcionamiento {
+	display: flex;
+}
+
+section.section-funcionamiento .container-funcionamiento div {
+	width: 50%;
+}
+
+section.section-funcionamiento .container-funcionamiento figure {
+	width: 50%;
+	position: relative;
+}
+
+
+section.section-funcionamiento .container-funcionamiento figure::before {
+	content: '';
+    position: absolute;
+    top: -75px;
+    left: 0px;
+    width: 43%;
+    height: 97%;
+    background: #1A448F;
+    z-index: -1;
+}
+
+
+section.section-funcionamiento .container-funcionamiento div p:first-child {
+	margin-bottom: 50px;
+}
+
+
+section.section-funcionamiento .container-funcionamiento div p {
+	margin-bottom: 17px;
+}
+
+
+section.section-funcionamiento .container-funcionamiento div button {
+	margin-top: 80px;
+	height: 47px;
+	width: 401px;
+	border-radius: 7px;
+	background-color: #1A448F;
+	color: #FFF;
+	font-family: Montserrat;
+	font-weight: 200;
+	font-size: 20px;
+	letter-spacing: 3.58px;
+	line-height: 24px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+}
+
+section.section-testimonios {
+	margin-bottom: 300px;
+}
+
+section.section-testimonios .container .titulo-testimonios {
+	width: 50%;
+	position: relative;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section.section-testimonios .container .titulo-testimonios figure {
+	position: absolute;
+	top: 145px;
+}
+
+
+section.section-testimonios .container .titulo-testimonios h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+	margin-bottom: 40px;
+	padding-left: 13px;
+}
+
+
+section.section-testimonios .container .titulo-testimonios p {
+	color: #666;
+	font-family: Verdana;
+	font-size: 26px;
+	line-height: 32px;
+	padding-left: 13px;
+}
+
+
+section.section-testimonios .container .slider-testimonios {
+	width: 50%;
+}
+
+section.section-testimonios .slider-testimonios .container-card {
+	display: flex !important;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo {
+	height: 294.37px;
+	width: 249.41px;
+	opacity: 0.7;
+	background-color: #FFF;
+	box-shadow: -6px 0 23px 0 rgba(0,0,0,0.13);
+	margin-bottom: 47px;
+	position: relative;
+	padding: 100px 50px 50px 50px;
+}
+
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo p.desc {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo p.cliente_nombre {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 8px;
+	font-style: italic;
+	line-height: 10px;
+	position: absolute;
+	bottom: 33px;
+	left: 22px;
+}
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo figure {
+	position: absolute;
+	bottom: 16px;
+	right: 15px;
+}
+
+section.section-testimonios .slider-testimonios .container-card .card-titulo:nth-child(odd) {
+	margin-right: 30px;
+}
+
+
+section.como-ayuda .container .container-avatars {
+	height: 311px;
+  	width: 738px;
+  	background-color: #1A448F;
+  	position: relative;
+}
+
+section.como-ayuda .container .txt-ayuda {
+	padding-left: 65px;
+	padding-top: 60px;
+}
+
+
+section.como-ayuda .container .txt-ayuda h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-weight: 300;
+	font-size: 40px;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+}
+
+
+section.como-ayuda .container-avatars .el-juan {
+	position: absolute;
+	top: -70px;
+	left: 83px;
+}
+
+section.como-ayuda .container-avatars .ella-maria {
+	position: absolute;
+	top: -123px;
+	left: 0;
+}
+
+
+section.como-ayuda .container-avatars .g-play {
+	position: absolute;
+	right: 130px;
+	top: 90px;
+}
+
+
+section.como-ayuda .container-avatars .avatar-ella {
+	position: absolute;
+	bottom: 36px;
+	left: 32px;
+}
+
+section.como-ayuda .container-avatars .avatar-el {
+	position: absolute;
+	bottom: 36px;
+	left: 52%;
+}
+
+section.como-ayuda {
+	margin-bottom: 400px;
+}
+
+section.beneficios-empresas {
+	margin-bottom: 300px;
+}
+
+section.beneficios-empresas .container {
+	flex-direction: column;
+}
+
+section.beneficios-empresas .container h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 40px;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+	margin-bottom: 160px;
+	text-align: center;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp {
+	display: flex;
+}
+
+
+section.beneficios-empresas .container .container-beneficiosemp figure {
+	width: 50%;
+	padding-top: 30px;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div {
+	width: 50%;
+	padding-left: 40px;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div button {
+	height: 47px;
+	width: 401px;
+	border-radius: 7px;
+	background: #1A448F;
+	color: #FFF;
+	font-family: Montserrat;
+	font-weight: 200;
+	font-size: 20px;
+	letter-spacing: 3.58px;
+	line-height: 24px;
+	text-align: center;
+	border: 2px solid #1A448F;
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div button.noactive {
+	color: #1A448F;
+	background: #fff;
+	border: 2px solid #1A448F;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div p:first-child {
+	margin-bottom: 50px;
+}
+
+section.beneficios-empresas .container .container-beneficiosemp div p {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 26px;
+	line-height: 32px;
+	margin-bottom: 17px;
+}
+
+
+section.beneficios-empresas .container .container-beneficiosemp div p:nth-child(5) {
+	margin-bottom: 80px;
+}
+
+section.beneficios-colab {
+	margin-bottom: 300px;
+}
+
+section.beneficios-colab .container {
+	flex-direction: column;
+}
+
+section.beneficios-colab .container h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 40px;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab {
+	display: flex;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div {
+	width: 50%;
+	padding-top: 55px;
+	padding-right: 20px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div p:first-child {
+	margin-bottom: 50px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div p:nth-child(5) {
+	margin-bottom: 80px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div p {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 26px;
+	line-height: 32px;
+	margin-bottom: 17px;
+}
+
+section.beneficios-colab .container .container-beneficioscolab figure {
+	width: 50%;
+}
+
+section.beneficios-colab .container .container-beneficioscolab div button {
+	height: 47px;
+	width: 401px;
+	border-radius: 7px;
+	background: #1A448F;
+	color: #FFF;
+	font-family: Montserrat;
+	font-weight: 200;
+	font-size: 20px;
+	letter-spacing: 3.58px;
+	line-height: 24px;
+	text-align: center;
+	border: 2px solid #1A448F;
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+
+section.media-section figure {
+	width: 50%;
+	position: relative;
+}
+
+
+section.media-section figure::before {
+	content: '';
+    position: absolute;
+    top: -75px;
+    left: 0px;
+    width: 57%;
+	height: 102%;
+    background: #1A448F;
+    z-index: -1;
+}
+
+section.media-section div.container div {
+	width: 50%;
+	padding-top: 40px;
+}
+
+section.media-section div h2 {
+	color: #4F4F4F;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 40px;
+	letter-spacing: 15.13px;
+	line-height: 49px;
+	margin-bottom: 128px;
+}
+
+
+section.media-section div p {
+	color: #666;
+	font-family: Montserrat;
+	font-size: 26px;
+	line-height: 32px;
+	margin-bottom: 72px;
+}
+
+
+section.media-section div button {
+	height: 47px;
+	width: 221px;
+	border-radius: 7px;
+	background-color: #1A448F;
+	color: #FFF;
+	font-family: Montserrat;
+	font-weight: 200;
+	font-size: 20px;
+	letter-spacing: 3.58px;
+	line-height: 24px;
+	text-align: center;
+	cursor: pointer;
+	border: 2px solid #1A448F;
+}
+
+
+section.media-section {
+	margin-bottom: 280px;
+}
+
+
+footer {
+	background: #1A448F;
+	padding-top: 120px;
+	padding-bottom: 123px;
+}
+
+footer .container-infopg figure{
+	margin-bottom: 80px;
+}
+
+footer .btn-plat_footer {
+	display: flex;
+}
+
+footer .btn-plat_footer a {
+	display: block;
+	height: 55px;
+	width: 163.28px;
+	background: #000;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	margin-bottom: 88px;
+}
+
+
+footer .btn-plat_footer a:first-child {
+	margin-right: 27px;
+}
+
+
+footer .container-infopg p {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 19px;
+	line-height: 23px;
+}
+
+
+footer .container-infopg {
+	width: 33%;
+}
+
+footer .container-infocontacto div p {
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 27px;
+	line-height: 33px;
+	margin-bottom: 37px;
+}
+
+footer .container-infocontacto div p i {
+	margin-right: 10px;
+}
+
+footer .container-infocontacto div {
+	display: flex;
+	flex-direction: column;
+	padding-left: 60px;
+	padding-right: 50px;
+}
+
+footer .container-infocontacto .icons-social {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 60px;
+}
+
+
+footer .img-celular {
+	position: relative;
+	width: 20%;
+}
+
+footer .img-celular figure {
+	position: absolute;
+	top: -235px;
+}
