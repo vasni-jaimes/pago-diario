@@ -622,6 +622,10 @@ footer .container-infopg {
 	width: 33%;
 }
 
+footer .container-infocontacto {
+	width: 45%;
+}
+
 footer .container-infocontacto div p {
 	color: #FFF;
 	font-family: Montserrat;
@@ -644,8 +648,12 @@ footer .container-infocontacto div {
 footer .container-infocontacto .icons-social {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	padding-top: 60px;
+}
+
+
+footer .container-infocontacto .icons-social figure {
+	margin-right: 60px;
 }
 
 
