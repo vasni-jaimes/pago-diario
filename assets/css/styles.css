@@ -46,6 +46,10 @@ header .flex {
     align-items: center;
 }
 
+header nav {
+	display: flex;
+}
+
 header nav .close {
 	display: none;
 }
@@ -53,13 +57,38 @@ header nav .close {
 header nav a {
 	color: #4F4F4F;
 	font-family: Montserrat;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 17px;
 	text-align: center;
 	text-decoration: none;
-	margin-right: 15px;
+	margin-right: 0.9375rem;
 }
 
+.burger {
+    width: 52px;
+    height: 52px;
+    background: #000;
+    border-radius: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-bottom: 3px;
+    text-align: right;
+}
+
+.burger span:nth-child(2) {
+    width: 75%;
+}
 
 
 header nav a.btn-azul_pd {
@@ -73,13 +102,22 @@ header nav a.btn-azul_pd {
 }
 
 header nav a.btn-azul_pd.login {
-	margin-left: 80px;
-	margin-right: 20px;
-	padding: 6px 10px 6px 15px;
+	display: inline-block;
+	height: 30px;
+  	width: 212px;
+	margin-left: 5rem;
+	margin-right: 1.25rem;
+	text-align: center;
+	line-height: 30px;
 }
 
 header nav a.btn-azul_pd.contacto {
-	padding: 6px 25px 6px 15px; 
+	display: inline-block;
+  	height: 30px;
+  	width: 162px;
+	margin-right: 0;
+	text-align: center;
+	line-height: 30px;
 }
 
 
@@ -145,7 +183,7 @@ section.quepago .container div button.noactive {
 
 
 section.section-funcionamiento {
-	margin-bottom: 250px;
+	margin-bottom: 200px;
 }
 
 section.section-funcionamiento .container h2 {
@@ -155,7 +193,7 @@ section.section-funcionamiento .container h2 {
 	font-size: 40px;
 	letter-spacing: 15.13px;
 	line-height: 49px;
-	margin-bottom: 210px;
+	margin-bottom: 150px;
 	text-align: center;
 }
 
@@ -377,7 +415,7 @@ section.como-ayuda {
 }
 
 section.beneficios-empresas {
-	margin-bottom: 300px;
+	margin-bottom: 250px;
 }
 
 section.beneficios-empresas .container {
@@ -391,7 +429,7 @@ section.beneficios-empresas .container h2 {
 	font-size: 40px;
 	letter-spacing: 15.13px;
 	line-height: 49px;
-	margin-bottom: 160px;
+	margin-bottom: 110px;
 	text-align: center;
 }
 
@@ -466,7 +504,7 @@ section.beneficios-colab .container h2 {
 	letter-spacing: 15.13px;
 	line-height: 49px;
 	text-align: center;
-	margin-bottom: 200px;
+	margin-bottom: 110px;
 }
 
 section.beneficios-colab .container .container-beneficioscolab {
@@ -670,3 +708,869 @@ footer .img-celular figure {
 footer .footercontainer {
 	padding-left: 50px;
 }
+
+
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
+
+	header {
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+	.burger {
+    	display: flex;
+    }
+
+    nav {
+	    width: 100%;
+	    height: 100vh;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    transition: all .3s ease;
+	    visibility: hidden;
+	    visibility: hidden;
+	    opacity: 0;
+	    display: none;
+	    flex-direction: column;
+	    justify-content: center;
+	    z-index: 9;
+	}
+
+	header nav a {
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+
+
+	nav.active {
+	    visibility: visible;
+	    opacity: 1;
+	    display: flex;
+	}
+
+	nav.active span.close {
+	    position: absolute;
+	    right: 30px;
+		top: 30px;
+	    display: block;
+	    cursor: pointer;
+	}
+
+	header nav a.btn-azul_pd.login {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	header nav a.btn-azul_pd.contacto {
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	nav div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* SECTION 1 */
+
+	section.quepago {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	section.quepago .container {
+		flex-direction: column;
+	}
+
+	section.quepago .container div {
+		width: 100%;
+	}
+
+	section.quepago .container div h2 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	section.quepago .container div p br {
+		display: none;
+	}
+
+	section.quepago .container figure {
+		width: 100%;
+	}
+
+	section.quepago .container div button {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	section.quepago .container div button.noactive {
+		margin-bottom: 50px;
+	}
+
+
+
+	/* SECTION 2 */
+
+	section.section-funcionamiento {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* SECTION 3 */
+
+	section.section-testimonios {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.section-testimonios .container {
+		flex-direction: column;
+	}
+
+	section.section-testimonios .container .titulo-testimonios {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	section.section-testimonios .container .titulo-testimonios h2 {
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	section.section-testimonios .container .slider-testimonios {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	section.section-testimonios .container .titulo-testimonios figure {
+		top: -72px;
+		left: 20px;
+	}
+
+	section.section-testimonios .container .titulo-testimonios p {
+		font-size: 20px;
+	}
+
+
+	/* SECTION 4 */
+
+
+	section.como-ayuda {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.como-ayuda .container-avatars .avatar-el {
+		bottom: 36px;
+		right: 130px;
+		left: auto;
+	}
+
+	section.como-ayuda .container-avatars .g-play {
+		right: 30px;
+		top: 50px;
+	}
+
+
+	/* SECTION 5 */
+
+	section.beneficios-empresas {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	/* SECTION 6 */
+
+	section.beneficios-colab {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	/* SECTION 7 */
+
+	section.media-section {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	/* FOOTER */
+
+	footer .footercontainer {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	footer .container-infopg {
+		width: 100%;
+		margin-bottom: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .container-infocontacto {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	footer .container-infocontacto div {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer .container-infocontacto div p {
+		font-size: 20px;
+	}
+
+	footer .img-celular {
+		width: 100%;
+	}
+
+	footer .img-celular figure {
+		position: relative;
+		top: 0;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	footer .container-infopg figure {
+		width: 50%;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	header {
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+	.burger {
+    	display: flex;
+    }
+
+    nav {
+	    width: 100%;
+	    height: 100vh;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    transition: all .3s ease;
+	    visibility: hidden;
+	    visibility: hidden;
+	    opacity: 0;
+	    display: none;
+	    flex-direction: column;
+	    justify-content: center;
+	    z-index: 9;
+	}
+
+	header nav a {
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+
+
+	nav.active {
+	    visibility: visible;
+	    opacity: 1;
+	    display: flex;
+	}
+
+	nav.active span.close {
+	    position: absolute;
+	    right: 30px;
+		top: 30px;
+	    display: block;
+	    cursor: pointer;
+	}
+
+	header nav a.btn-azul_pd.login {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	header nav a.btn-azul_pd.contacto {
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	nav div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* SECTION 1 */
+
+	section.quepago {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	section.quepago .container {
+		flex-direction: column;
+	}
+
+	section.quepago .container div {
+		width: 100%;
+	}
+
+	section.quepago .container div h2 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	section.quepago .container div p br {
+		display: none;
+	}
+
+	section.quepago .container figure {
+		width: 100%;
+	}
+
+	section.quepago .container div button {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	section.quepago .container div button.noactive {
+		margin-bottom: 50px;
+	}
+
+
+
+	/* SECTION 2 */
+
+	section.section-funcionamiento {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* SECTION 3 */
+
+	section.section-testimonios {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.section-testimonios .container {
+		flex-direction: column;
+	}
+
+	section.section-testimonios .container .titulo-testimonios {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	section.section-testimonios .container .titulo-testimonios h2 {
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	section.section-testimonios .container .slider-testimonios {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	section.section-testimonios .container .titulo-testimonios figure {
+		top: -72px;
+		left: 20px;
+	}
+
+	section.section-testimonios .container .titulo-testimonios p {
+		font-size: 20px;
+	}
+
+
+	/* SECTION 4 */
+
+
+	section.como-ayuda {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.como-ayuda .container-avatars .avatar-el {
+		bottom: 36px;
+		right: 130px;
+		left: auto;
+	}
+
+	section.como-ayuda .container-avatars .g-play {
+		right: 30px;
+		top: 50px;
+	}
+
+
+	/* SECTION 5 */
+
+	section.beneficios-empresas {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	/* SECTION 6 */
+
+	section.beneficios-colab {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	/* SECTION 7 */
+
+	section.media-section {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+
+	/* FOOTER */
+
+	footer .footercontainer {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	footer .container-infopg {
+		width: 100%;
+		margin-bottom: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .container-infocontacto {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	footer .container-infocontacto div {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer .container-infocontacto div p {
+		font-size: 20px;
+	}
+
+	footer .img-celular {
+		width: 100%;
+	}
+
+	footer .img-celular figure {
+		position: relative;
+		top: 0;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	footer .container-infopg figure {
+		width: 50%;
+	}
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+	header {
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+	.burger {
+    	display: flex;
+    }
+
+    nav {
+	    width: 100%;
+	    height: 100vh;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    transition: all .3s ease;
+	    visibility: hidden;
+	    visibility: hidden;
+	    opacity: 0;
+	    display: none;
+	    flex-direction: column;
+	    justify-content: center;
+	    z-index: 9;
+	}
+
+	header nav a {
+		margin-bottom: 40px;
+		font-size: 20px;
+	}
+
+
+	nav.active {
+	    visibility: visible;
+	    opacity: 1;
+	    display: flex;
+	}
+
+	nav.active span.close {
+	    position: absolute;
+	    right: 30px;
+		top: 30px;
+	    display: block;
+	    cursor: pointer;
+	}
+
+	header nav a.btn-azul_pd.login {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	header nav a.btn-azul_pd.contacto {
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	nav div {
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	/* SECTION 1 */
+
+	section.quepago {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.quepago .container {
+		flex-direction: column;
+	}
+
+	section.quepago .container div {
+		width: 100%;
+	}
+
+	section.quepago .container div h2 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	section.quepago .container div p br {
+		display: none;
+	}
+
+	section.quepago .container figure {
+		width: 100%;
+	}
+
+	section.quepago .container div button {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	section.quepago .container div button.noactive {
+		margin-bottom: 50px;
+	}
+
+	/* SECTION 2 */
+
+	section.section-funcionamiento {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.section-funcionamiento .container h2 {
+		font-size: 30px;
+	}
+
+	section.section-funcionamiento .container-funcionamiento {
+		flex-direction: column;
+	}
+
+	section.section-funcionamiento .container-funcionamiento figure {
+		width: 100%;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div {
+		width: 100%;
+	}
+
+	section.section-funcionamiento .container .container-funcionamiento p {
+		font-size: 20px;
+	}
+
+
+	/* SECTION 3 */
+
+	section.section-testimonios {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.section-testimonios .container {
+		flex-direction: column;
+	}
+
+	section.section-testimonios .container .titulo-testimonios {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	section.section-testimonios .container .titulo-testimonios h2 {
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	section.section-testimonios .container .slider-testimonios {
+		width: 100%;
+	}
+
+	section.section-testimonios .container .titulo-testimonios figure {
+		top: -72px;
+		left: 20px;
+	}
+
+	section.section-testimonios .slider-testimonios .container-card .card-titulo:nth-child(2n+1) {
+		margin-right: 0;
+	}
+
+	section.section-testimonios .container .titulo-testimonios p {
+		font-size: 20px;
+	}
+
+
+	/* SECTION 4 */
+
+
+	section.como-ayuda {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	section.como-ayuda .container {
+		flex-direction: column-reverse;
+	}
+
+	section.como-ayuda .container .container-avatars {
+		width: 100%;
+	}
+
+	section.como-ayuda .container .txt-ayuda {
+		padding: 0;
+	}
+
+	section.como-ayuda .container .txt-ayuda h2 {
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 130px;
+	}
+
+	section.como-ayuda .container-avatars .avatar-el {
+		left: 70%;
+	}
+
+	section.como-ayuda .container-avatars .ella-maria {
+		top: -100px;
+		left: 24px;
+		width: 60%;
+	}
+
+	section.como-ayuda .container-avatars .g-play {
+		right: 25px;
+		top: 67px;
+		width: 20%;
+	}
+
+
+
+
+	/* SECTION 5 */
+
+	section.beneficios-empresas {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	section.beneficios-empresas .container h2 {
+		font-size: 30px;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp {
+		flex-direction: column;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp figure {
+		width: 100%;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp div {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp div p {
+		font-size: 20px;
+	}
+
+	section.beneficios-empresas .container .container-beneficiosemp div button {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
+
+
+	/* SECTION 6 */
+
+	section.beneficios-colab {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	section.beneficios-colab .container h2 {
+		font-size: 30px;
+		letter-spacing: 9px;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab {
+		flex-direction: column-reverse;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab div {
+		width: 100%;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab figure {
+		width: 100%;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab div p {
+		font-size: 20px;
+	}
+
+	section.beneficios-colab .container .container-beneficioscolab div button {
+		display: block;
+		margin: 0 auto;
+	}
+
+
+	/* SECTION 7 */
+
+	section.media-section {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	section.media-section .container {
+		flex-direction: column;
+	}
+
+	section.media-section figure {
+		width: 90%;
+	}
+
+	section.media-section div.container div {
+		width: 100%;
+	}
+
+	section.media-section div h2 {
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	section.media-section div p {
+		font-size: 20px;
+	}
+
+	section.media-section div button {
+		display: block;
+		margin: 0 auto;
+	}
+
+
+	/* FOOTER */
+
+	footer .footercontainer {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	footer .container-infopg {
+		width: 100%;
+		margin-bottom: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .container-infocontacto {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	footer .container-infocontacto div {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer .container-infocontacto div p {
+		font-size: 20px;
+	}
+
+	footer .img-celular {
+		width: 100%;
+	}
+
+	footer .img-celular figure {
+		position: relative;
+		top: 0;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+}
+
+
