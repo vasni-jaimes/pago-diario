@@ -1039,6 +1039,59 @@ footer .footercontainer {
 		flex-direction: column;
 	}
 
+
+	/* SECCION 1 */
+
+	section.quepago {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* SECCION 2 */
+
+	section.section-funcionamiento {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* SECCION 3 */
+
+	section.section-testimonios {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* SECCION 4 */
+
+	section.como-ayuda {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* SECCION 5 */
+
+	section.beneficios-empresas {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+	/* SECCION 6 */
+
+	section.beneficios-colab {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* SECCION 7 */
+	
+	section.media-section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
 }
 
 
@@ -1812,7 +1865,7 @@ footer .footercontainer {
 	section.como-ayuda .container-avatars .ella-maria {
 		top: -100px;
 		left: 24px;
-		width: 60%;
+		width: 61%;
 	}
 
 	section.como-ayuda .container-avatars .g-play {
