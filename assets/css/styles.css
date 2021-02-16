@@ -120,6 +120,226 @@ header nav a.btn-azul_pd.contacto {
 	line-height: 30px;
 }
 
+header nav a.btn-azul_pd:hover {
+	background: #FFF;
+	color: #1A448F;
+	border: 1px solid #1A448F;
+}
+
+
+div.poup-colaboradores {
+	width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.80);
+    transition: all .3s ease;
+    z-index: 9;
+    display: none;
+    overflow: hidden;
+}
+
+
+div.poup-colaboradores span.close {
+    position: absolute;
+    right: 170px;
+    top: 80px;
+    display: block;
+    cursor: pointer;
+}
+
+div.poup-colaboradores h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Montserrat;
+    display: block;
+    margin-bottom: 20px;
+    /*margin-top: 70px;*/
+}
+
+
+div.poup-colaboradores p {
+	font-family: Montserrat;
+	font-size: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+div.poup-colaboradores .container {
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	max-width: 700px;
+	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+}
+
+div.poup-colaboradores .container .close {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	display: block;
+	cursor: pointer;
+	font-weight: 100;
+}
+
+
+div.poup-colaboradores .container form {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	width: 90%;
+}
+
+
+div.poup-colaboradores .container form input {
+	width: 100%;
+	height: 50px;
+	text-transform: none;
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	color: #666;
+	outline: none;
+	font-family: Montserrat;
+	font-size: 16px;
+	background-color: #f4f4f4;
+	border: 1px solid #f4f4f4;
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+
+
+div.poup-colaboradores .container form input::placeholder {
+	padding-left: 30px;
+}
+
+
+div.poup-colaboradores .container form button {
+	width: 200px;
+	height: 50px;
+	background: #1A448F;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-weight: 200;
+}
+
+div.poup-empresas {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.80);
+    transition: all .3s ease;
+    z-index: 9;
+    display: none;
+    overflow: hidden;
+}
+
+div.poup-empresas span.close {
+    position: absolute;
+    right: 170px;
+    top: 80px;
+    display: block;
+    cursor: pointer;
+}
+
+div.poup-empresas h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Montserrat;
+    display: block;
+    margin-bottom: 20px;
+    /*margin-top: 70px;*/
+}
+
+
+div.poup-empresas p {
+	font-family: Montserrat;
+	font-size: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+div.poup-empresas .container {
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	max-width: 700px;
+	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+}
+
+div.poup-empresas .container .close {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	display: block;
+	cursor: pointer;
+	font-weight: 100;
+}
+
+
+div.poup-empresas .container form {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	width: 90%;
+}
+
+
+div.poup-empresas .container form input {
+	width: 100%;
+	height: 50px;
+	text-transform: none;
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	color: #666;
+	outline: none;
+	font-family: Montserrat;
+	font-size: 16px;
+	background-color: #f4f4f4;
+	border: 1px solid #f4f4f4;
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+
+
+div.poup-empresas .container form input::placeholder {
+	padding-left: 30px;
+}
+
+
+div.poup-empresas .container form button {
+	width: 200px;
+	height: 50px;
+	background: #1A448F;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-weight: 200;
+}
+
 
 section.quepago {
 	margin-bottom: 200px;
@@ -173,13 +393,26 @@ section.quepago .container div button {
 	cursor: pointer;
 }
 
+section.quepago .container div button:hover {
+	background-color: #fff;
+	color: #1A448F;
 
-section.quepago .container div button.noactive {
+}
+
+
+/*section.quepago .container div button.noactive {
 	background-color: #fff;
 	color: #018FC0;
 	border: 2px solid #018FC0;
 	cursor: pointer;
-}
+}*/
+
+/*section.quepago .container div button.noactive:hover {
+	background-color: #018FC0;
+	color: #fff;
+	border: 2px solid #018FC0;
+	cursor: pointer;
+}*/
 
 
 section.section-funcionamiento {
@@ -261,6 +494,12 @@ section.section-funcionamiento .container-funcionamiento div button {
 	text-align: center;
 	cursor: pointer;
 	border: none;
+}
+
+section.section-funcionamiento .container-funcionamiento div button:hover {
+	background-color: #FFF;
+	color: #1A448F;
+	border: 2px solid #1A448F;
 }
 
 section.section-testimonios {
@@ -465,11 +704,16 @@ section.beneficios-empresas .container .container-beneficiosemp div button {
 	cursor: pointer;
 }
 
-section.beneficios-empresas .container .container-beneficiosemp div button.noactive {
+section.beneficios-empresas .container .container-beneficiosemp div button:hover {
+	background: #FFF;
+	color: #1A448F;
+}
+
+/*section.beneficios-empresas .container .container-beneficiosemp div button.noactive {
 	color: #1A448F;
 	background: #fff;
 	border: 2px solid #1A448F;
-}
+}*/
 
 section.beneficios-empresas .container .container-beneficiosemp div p:first-child {
 	margin-bottom: 50px;
@@ -554,6 +798,11 @@ section.beneficios-colab .container .container-beneficioscolab div button {
 	cursor: pointer;
 }
 
+section.beneficios-colab .container .container-beneficioscolab div button:hover {
+	background: #FFF;
+	color: #1A448F;
+}
+
 section.media-section figure {
 	width: 50%;
 	position: relative;
@@ -613,6 +862,12 @@ section.media-section div button {
 }
 
 
+section.media-section div button:hover {
+	background-color: #fff;
+	color: #1A448F;
+}
+
+
 section.media-section {
 	margin-bottom: 280px;
 }
@@ -626,6 +881,7 @@ footer {
 
 footer .container-infopg figure{
 	margin-bottom: 80px;
+	width: 300px;
 }
 
 footer .btn-plat_footer {
@@ -633,18 +889,18 @@ footer .btn-plat_footer {
 }
 
 footer .btn-plat_footer a {
-	display: block;
-	height: 55px;
-	width: 163.28px;
-	background: #000;
-	border-radius: 5px;
-	border: 1px solid #fff;
 	margin-bottom: 88px;
 }
 
 
 footer .btn-plat_footer a:first-child {
 	margin-right: 27px;
+}
+
+
+footer .btn-plat_footer a figure {
+	width: 170px;
+	margin-bottom: 0;
 }
 
 
@@ -674,6 +930,11 @@ footer .container-infocontacto div p {
 
 footer .container-infocontacto div p i {
 	margin-right: 10px;
+}
+
+footer .container-infocontacto div p a {
+	text-decoration: none;
+	color: #fff;
 }
 
 footer .container-infocontacto div {
@@ -799,7 +1060,7 @@ footer .footercontainer {
 
 	section.quepago .container div h2 {
 		text-align: center;
-		font-size: 30px;
+		font-size: 40px;
 	}
 
 	section.quepago .container div p br {
@@ -1266,6 +1527,23 @@ footer .footercontainer {
 	nav div {
 		display: flex;
 		flex-direction: column;
+	}
+
+	div.poup-empresas .container,
+	div.poup-colaboradores .container {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	div.poup-empresas h3,
+	div.poup-colaboradores h3 {
+		font-size: 2rem;
+	}
+
+	div.poup-empresas p,
+	div.poup-colaboradores p {
+		font-size: 14px;
 	}
 
 
