@@ -1060,7 +1060,7 @@ footer .footercontainer {
 
 	section.quepago .container div h2 {
 		text-align: center;
-		font-size: 40px;
+		font-size: 20px;
 	}
 
 	section.quepago .container div p br {
@@ -1564,7 +1564,11 @@ footer .footercontainer {
 
 	section.quepago .container div h2 {
 		text-align: center;
-		font-size: 30px;
+		font-size: 20px;
+	}
+
+	section.quepago .container div p {
+		font-size: 16px;
 	}
 
 	section.quepago .container div p br {
@@ -1579,6 +1583,7 @@ footer .footercontainer {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 30px;
+		font-size: 15px;
 	}
 
 	section.quepago .container div button.noactive {
@@ -1593,7 +1598,7 @@ footer .footercontainer {
 	}
 
 	section.section-funcionamiento .container h2 {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	section.section-funcionamiento .container-funcionamiento {
@@ -1609,7 +1614,12 @@ footer .footercontainer {
 	}
 
 	section.section-funcionamiento .container .container-funcionamiento p {
-		font-size: 20px;
+		font-size: 16px;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div button {
+		width: 100%;
+		font-size: 15px;
 	}
 
 
@@ -1630,7 +1640,7 @@ footer .footercontainer {
 	}
 
 	section.section-testimonios .container .titulo-testimonios h2 {
-		font-size: 30px;
+		font-size: 20px;
 		text-align: center;
 		margin-bottom: 60px;
 	}
@@ -1649,7 +1659,7 @@ footer .footercontainer {
 	}
 
 	section.section-testimonios .container .titulo-testimonios p {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 
@@ -1674,7 +1684,7 @@ footer .footercontainer {
 	}
 
 	section.como-ayuda .container .txt-ayuda h2 {
-		font-size: 30px;
+		font-size: 20px;
 		text-align: center;
 		margin-bottom: 130px;
 	}
@@ -1706,7 +1716,7 @@ footer .footercontainer {
 	}
 
 	section.beneficios-empresas .container h2 {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	section.beneficios-empresas .container .container-beneficiosemp {
@@ -1723,13 +1733,15 @@ footer .footercontainer {
 	}
 
 	section.beneficios-empresas .container .container-beneficiosemp div p {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	section.beneficios-empresas .container .container-beneficiosemp div button {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 35px;
+		width: 100%;
+		font-size: 15px;
 	}
 
 
@@ -1741,7 +1753,7 @@ footer .footercontainer {
 	}
 
 	section.beneficios-colab .container h2 {
-		font-size: 30px;
+		font-size: 20px;
 		letter-spacing: 9px;
 	}
 
@@ -1758,12 +1770,14 @@ footer .footercontainer {
 	}
 
 	section.beneficios-colab .container .container-beneficioscolab div p {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	section.beneficios-colab .container .container-beneficioscolab div button {
 		display: block;
 		margin: 0 auto;
+		width: 100%;
+		font-size: 15px;
 	}
 
 
@@ -1787,18 +1801,19 @@ footer .footercontainer {
 	}
 
 	section.media-section div h2 {
-		font-size: 30px;
+		font-size: 20px;
 		text-align: center;
 		margin-bottom: 50px;
 	}
 
 	section.media-section div p {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	section.media-section div button {
 		display: block;
 		margin: 0 auto;
+		font-size: 15px;
 	}
 
 
@@ -1829,8 +1844,13 @@ footer .footercontainer {
 		align-items: center;
 	}
 
+	footer .container-infopg p {
+		font-size: 16px;
+		text-align: center;
+	}
+
 	footer .container-infocontacto div p {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	footer .img-celular {
@@ -1842,6 +1862,11 @@ footer .footercontainer {
 		top: 0;
 		max-width: 300px;
 		margin: 0 auto;
+	}
+
+	footer .btn-plat_footer {
+		display: block;
+		margin-bottom: 60px;
 	}
 
 }
