@@ -26,7 +26,7 @@
 					<span class="bar"></span>
 				</div>
 				<nav>
-					<span class="close fa fa-times fa-4x"></span>
+					<span class="close fa fa-times fa-3x"></span>
 					<div>
 						<a href="#funciona"> ¿COMO FUNCIONA? </a>
 						<a href="#testimonios"> TESTIMONIOS </a>
@@ -46,12 +46,12 @@
 					<h3>EMPRESAS</h3>
 					<p>Ayúdanos a que Pagodiario pueda llegar a tu empresa<br> poniéndonos en contacto con tu Departamento de<br> Recursos Humanos</p>
 
-					<form>
+					<form name="form_empresas">
 						<input type="text" placeholder="Nombre completo*" name="nombre">
 						<input type="text" placeholder="Correo de trabajo*" name="email">
-						<input type="text" placeholder="Numero de telefono*" name="telefono">
+						<input type="number" placeholder="Numero de telefono*" name="telefono">
 						<input type="text" placeholder="Puesto*" name="puesto">
-						<input type="text" placeholder="Numero de empleados*" name="empleados">
+						<input type="number" placeholder="Numero de empleados*" name="empleados">
 						<button>Activar Pago diario</button>
 					</form>
 				</div>
@@ -62,10 +62,10 @@
 					<h3>COLABORADORES</h3>
 					<p>Ayúdanos a que Pagodiario pueda llegar a tu empresa<br> poniéndonos en contacto con tu Departamento de<br> Recursos Humanos</p>
 
-					<form>
+					<form name="form_empleados">
 						<input type="text" placeholder="Nombre completo*" name="nombre">
 						<input type="text" placeholder="Correo de R.H.*" name="email">
-						<input type="text" placeholder="telefono de R.H.*" name="email">
+						<input type="text" placeholder="telefono de R.H.*" name="telefono">
 						<button>Activar Pago diario</button>
 					</form>
 				</div>
@@ -104,7 +104,7 @@
 						<p>Lorem ipsum dolor sit amet.</p>
 						<p>Lorem ipsum dolor sit amet.</p>
 
-						<button> CONSIGUELO SIN COSTO </button>
+						<button class="empleado"> CONSIGUELO SIN COSTO </button>
 					</div>
 				</div>
 			</div>
@@ -121,7 +121,82 @@
 						eget dolor.
 					</p>
 				</div>
-				<div class="slider-testimonios slide slide-index">
+				<div class="slider-testimonios slide-mobile slide slide-index">
+					<div class="container-card">
+						<div class="card-titulo">
+							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+							<p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+							<figure>
+								<img src="assets/img/logo-azlo.png">
+							</figure>
+						</div>
+					</div>
+					<div class="container-card">
+						<div class="card-titulo">
+							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+							<p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+							<figure>
+								<img src="assets/img/pae-logo.png">
+							</figure>
+						</div>
+					</div>
+					<div class="container-card">
+						<div class="card-titulo">
+							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+							<p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+							<figure>
+								<img src="assets/img/rabbit-logo.png">
+							</figure>
+						</div>
+					</div>
+					<div class="container-card">
+						<div class="card-titulo">
+							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+							<p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+							<figure>
+								<img src="assets/img/m-logo.png">
+							</figure>
+						</div>
+					</div>
+					<div class="container-card">
+						<div class="card-titulo">
+							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+							<p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+							<figure>
+								<img src="assets/img/logo-azlo.png">
+							</figure>
+						</div>
+					</div>
+					<div class="container-card">
+						<div class="card-titulo">
+							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+							<p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+							<figure>
+								<img src="assets/img/pae-logo.png">
+							</figure>
+						</div>
+					</div>
+					<div class="container-card">
+						<div class="card-titulo">
+							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+							<p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+							<figure>
+								<img src="assets/img/rabbit-logo.png">
+							</figure>
+						</div>
+					</div>
+					<div class="container-card">
+						<div class="card-titulo">
+							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
+							<p class="cliente_nombre">Nombre Apellido <br> puesto</p>
+							<figure>
+								<img src="assets/img/m-logo.png">
+							</figure>
+						</div>
+					</div>
+				</div>
+
+				<div class="slider-testimonios slide-desktop slide slide-index">
 					<div class="container-card">
 						<div class="card-titulo">
 							<p class="desc">Lorem ipsum dolor sit amet,consectetuer adipiscing elit. </p>
@@ -228,7 +303,7 @@
 						<p>Lorem ipsum dolor sit amet.</p>
 						<p>Lorem ipsum dolor sit amet.</p>
 
-						<button> CONSIGUELO SIN COSTO </button>
+						<button class="empleado"> CONSIGUELO SIN COSTO </button>
 						<button class="noactive"> LOGIN EMPRESAS </button>
 					</div>
 				</div>
@@ -250,7 +325,7 @@
 						<p>Lorem ipsum dolor sit amet.</p>
 						<p>Lorem ipsum dolor sit amet.</p>
 
-						<button> CONSIGUELO SIN COSTO </button>
+						<button class="empleado"> CONSIGUELO SIN COSTO </button>
 					</div>
 					<figure>
 						<img src="assets/img/colaboradores.png">

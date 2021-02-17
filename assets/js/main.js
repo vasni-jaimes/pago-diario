@@ -60,17 +60,15 @@ if (poup_empresas) {
 }
 
 
-
-
-
-
 //CLICK PARA ABRIR UN POPUP COLABORADORES
-const quepagoColab = document.querySelector('section.quepago button.empleado');
+const quepagoColab = document.querySelectorAll('button.empleado');
 if (quepagoColab) {
-	quepagoColab.addEventListener('click', function(e) {
-		e.preventDefault();
-		document.querySelector('.poup-colaboradores').style.display = 'flex';
-	});
+	for (var i = 0; i <= quepagoColab.length - 1; i++) {
+		quepagoColab[i].addEventListener('click', function(e) {
+			e.preventDefault();
+			document.querySelector('.poup-colaboradores').style.display = 'flex';
+		});
+	}
 }
 
 //CLICK PARA CERRAR UN POPUP COLABORADORES
@@ -79,4 +77,150 @@ if (poup_empleado) {
 	poup_empleado.addEventListener('click', function(e) {
 		document.querySelector('.poup-colaboradores').style.display = 'none';
 	})
+}
+
+
+//VALIDAR FORMULARIO DE EMPLEADO
+const form_empleados = document.querySelector('form[name="form_empleados"]');
+if (form_empleados) {
+	form_empleados.addEventListener('submit', validarFormEmpleados);
+	let inputs = document.querySelectorAll('form[name="form_empleados"] input');
+	for (var i = 0; i <= inputs.length - 1; i++) {
+		inputs[i].addEventListener('input', validarFormEmpleados);
+		inputs[i].addEventListener('change', validarFormEmpleados);
+	}
+}
+
+
+//VALIDAR FORMULARIO DE EMPRESA
+const form_empresas = document.querySelector('form[name="form_empresas"]');
+if (form_empresas) {
+	form_empresas.addEventListener('submit', validarFormEmpresas);
+	let inputs = document.querySelectorAll('form[name="form_empresas"] input');
+	for (var i = 0; i <= inputs.length - 1; i++) {
+		inputs[i].addEventListener('input', validarFormEmpresas);
+		inputs[i].addEventListener('change', validarFormEmpresas);
+	}
+}
+
+
+function validarFormEmpleados(e) {
+	e.preventDefault();
+
+	//SE ELIMINAN LOS RASTROS DE ERRORES
+	if (document.querySelector('.has-error')) {
+		document.querySelectorAll('.has-error').forEach((item) => {
+			item.classList.remove('has-error');
+		});
+	}
+	//SE ELIMINAN LOS RASTROS DE ERRORES\\
+
+	let nombre = document.querySelector('form[name="form_empleados"] input[name="nombre"]');
+	let email = document.querySelector('form[name="form_empleados"] input[name="email"]');
+	let telefono = document.querySelector('form[name="form_empleados"] input[name="telefono"]');
+
+	/* STATUS */
+	let error_videos = false;
+
+
+	if (nombre.value == '') {
+		nombre.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (email.value == '') {
+		email.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (!validarEmail(email.value)) {
+		email.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (telefono.value == '') {
+		telefono.classList.add('has-error');
+		error_videos = true;
+	}
+
+
+
+	if (error_videos == false) {
+		if (e.type == 'submit') {
+			document.querySelector('.poup-colaboradores').style.display = 'none';
+		}
+
+		return false;
+	}
+
+	return false;
+}
+
+
+function validarFormEmpresas(e) {
+	e.preventDefault();
+
+	//SE ELIMINAN LOS RASTROS DE ERRORES
+	if (document.querySelector('.has-error')) {
+		document.querySelectorAll('.has-error').forEach((item) => {
+			item.classList.remove('has-error');
+		});
+	}
+	//SE ELIMINAN LOS RASTROS DE ERRORES\\
+
+	let nombre = document.querySelector('form[name="form_empresas"] input[name="nombre"]');
+	let email = document.querySelector('form[name="form_empresas"] input[name="email"]');
+	let telefono = document.querySelector('form[name="form_empresas"] input[name="telefono"]');
+	let puesto = document.querySelector('form[name="form_empresas"] input[name="puesto"]');
+	let empleados = document.querySelector('form[name="form_empresas"] input[name="empleados"]');
+
+	/* STATUS */
+	let error_videos = false;
+
+
+	if (nombre.value == '') {
+		nombre.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (email.value == '') {
+		email.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (!validarEmail(email.value)) {
+		email.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (telefono.value == '') {
+		telefono.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (puesto.value == '') {
+		puesto.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (empleados.value == '') {
+		empleados.classList.add('has-error');
+		error_videos = true;
+	}
+
+
+
+	if (error_videos == false) {
+		if (e.type == 'submit') {
+			document.querySelector('.poup-empresas').style.display = 'none';
+		}
+
+		return false;
+	}
+}
+
+
+function validarEmail(email) {
+	var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	return regex.test(email) ? true : false;
 }
