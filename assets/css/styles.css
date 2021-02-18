@@ -29,6 +29,10 @@ figure img {
 	border: 1px solid red !important;
 }
 
+.horizon {
+	opacity: 0;
+}
+
 
 .flex {
 	display: flex;
