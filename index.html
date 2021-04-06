@@ -57,8 +57,11 @@
 						<input type="number" placeholder="Numero de telefono*" name="telefono">
 						<input type="text" placeholder="Puesto*" name="puesto">
 						<input type="number" placeholder="Numero de empleados*" name="empleados">
-						<label><input type="checkbox" name="terminos"> Acepto terminos</label>
-						<button>Activar Pago diario</button>
+						<div>
+							<input type="checkbox" id="check1" name="terminos">
+							<label for="check1">Acepto</label>
+							<button>Activar Pago diario</button>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -72,19 +75,20 @@
 						<input type="text" placeholder="Nombre completo*" name="nombre">
 						<input type="text" placeholder="Correo de R.H.*" name="email">
 						<input type="text" placeholder="telefono de R.H.*" name="telefono">
-						<label><input type="checkbox" name="terminos"> Acepto terminos</label>
-						<button>Activar Pago diario</button>
+						<div>
+							<input type="checkbox" id="check2" name="terminos">
+							<label for="check2">Acepto</label>
+							<button>Activar Pago diario</button>
+						</div>
 					</form>
 				</div>
 			</div>
 		</header>
 		<section class="quepago">
 			<div class="container flex">
-
 				<figure class="background-pd_blue">
 					<img src="assets/img/background-home.png">
 				</figure>
-
 				<div>
 					<h3>En Pago Diario</h3>
 					<h2 class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-no-scale>¡Todos los días <br> son de pago!</h2>
