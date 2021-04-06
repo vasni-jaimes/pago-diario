@@ -196,6 +196,7 @@ div.poup-colaboradores .container {
 	padding-left: 50px;
 	padding-right: 50px;
 	position: relative;
+	min-width: 0;
 }
 
 div.poup-colaboradores .container .close {
@@ -216,7 +217,7 @@ div.poup-colaboradores .container form {
 }
 
 
-div.poup-colaboradores .container form input {
+div.poup-colaboradores .container form input[type="text"] {
 	width: 100%;
 	height: 50px;
 	text-transform: none;
@@ -262,6 +263,7 @@ div.poup-videoyt {
     z-index: 9;
     display: none;
     overflow: hidden;
+    min-width: 0;
 }
 
 div.poup-videoyt span.close {
@@ -283,6 +285,7 @@ div.poup-videoyt .container {
 	padding-left: 50px;
 	padding-right: 50px;
 	position: relative;
+	min-width: 0;
 }
 
 div.poup-videoyt .container .close {
@@ -350,6 +353,7 @@ div.poup-empresas .container {
 	padding-left: 50px;
 	padding-right: 50px;
 	position: relative;
+	min-width: 0;
 }
 
 div.poup-empresas .container .close {
@@ -369,8 +373,8 @@ div.poup-empresas .container form {
 	width: 90%;
 }
 
-
-div.poup-empresas .container form input {
+div.poup-empresas .container form input[type="number"],
+div.poup-empresas .container form input[type="text"] {
 	width: 100%;
 	height: 50px;
 	text-transform: none;
@@ -587,7 +591,7 @@ section.section-funcionamiento {
 section.section-funcionamiento .container .container-funcionamiento p {
 	color: #666;
 	font-family: Montserrat;
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 300;
 }
 
@@ -599,6 +603,8 @@ section.section-funcionamiento .container {
 section.section-funcionamiento .container-funcionamiento {
 	display: flex;
 }
+
+
 
 section.section-funcionamiento .container-funcionamiento div {
 	width: 50%;
@@ -627,6 +633,15 @@ section.section-funcionamiento .container-funcionamiento figure {
 section.section-funcionamiento .container-funcionamiento figure img {
 	position: relative;
 	left: -110px;
+}
+
+section.section-funcionamiento .container-funcionamiento figure img.last {
+	position: absolute;
+	width: 90px;
+	left: 45%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
 }
 
 
@@ -928,7 +943,6 @@ section.beneficios-colab .container .container-beneficioscolab div button:hover 
 footer {
 	background: #004E6E;
 	padding-top: 50px;
-	padding-bottom: 123px;
 }
 
 footer .container-infocontacto figure{
@@ -1320,38 +1334,55 @@ footer .footercontainer {
 	section.quepago {
 		padding-left: 20px;
 		padding-right: 20px;
+		margin-bottom: 200px;
 	}
-
 
 	section.quepago .container {
 		flex-direction: column;
 	}
 
+	section.quepago .container figure.background-pd_blue {
+		width: 100%;
+	}
+
+	section.quepago .container div h3 {
+		text-align: center;
+	}
+
 	section.quepago .container div {
 		width: 100%;
+		margin-bottom: 80px;
 	}
 
 	section.quepago .container div h2 {
 		text-align: center;
-		font-size: 30px;
+		font-size: 20px;
+		letter-spacing: 5px;
+		line-height: 30px;
+	}
+
+	section.quepago .container div p {
+		font-size: 16px;
+		text-align: center;
 	}
 
 	section.quepago .container div p br {
 		display: none;
 	}
 
-	section.quepago .container figure {
+	section.quepago .container figure.diario-home {
 		width: 100%;
+	}
+
+	section.quepago .container div button.empresa {
+		margin-right: 0;
+		margin: 0 auto;
+		margin-bottom: 30px;
 	}
 
 	section.quepago .container div button {
 		display: block;
 		margin: 0 auto;
-		margin-bottom: 30px;
-	}
-
-	section.quepago .container div button.noactive {
-		margin-bottom: 50px;
 	}
 
 
@@ -1364,7 +1395,7 @@ footer .footercontainer {
 	}
 
 	section.section-funcionamiento .container .container-funcionamiento p {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	section.section-funcionamiento .container-funcionamiento div button {
@@ -1442,6 +1473,10 @@ footer .footercontainer {
 
 	/* FOOTER */
 
+	footer {
+		padding-bottom: 0;
+	}
+
 	footer .footercontainer {
 		flex-direction: column;
 		padding-left: 20px;
@@ -1450,15 +1485,18 @@ footer .footercontainer {
 
 	footer .container-infopg {
 		width: 100%;
-		margin-bottom: 100px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding-top: 0;
+	}
+
+	footer .container-infopg p {
+		font-size: 26px;
 	}
 
 	footer .container-infocontacto {
 		width: 100%;
-		margin-bottom: 100px;
 	}
 
 	footer .container-infocontacto div {
@@ -1467,12 +1505,10 @@ footer .footercontainer {
 		align-items: center;
 	}
 
-	footer .container-infocontacto div p {
-		font-size: 20px;
-	}
 
 	footer .img-celular {
 		width: 100%;
+		margin-bottom: 50px;
 	}
 
 	footer .img-celular figure {
@@ -1483,7 +1519,19 @@ footer .footercontainer {
 	}
 
 	footer .container-infocontacto figure {
-		width: 50%;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		padding-right: 50px;
+		padding-left: 0;
+	}
+
+	footer .container-infopg .icons-social {
+		padding-right: 0;
+	}
+
+	footer .container-infopg .icons-social figure {
+		margin-right: 30px;
 	}
 
 }
@@ -1653,6 +1701,10 @@ footer .footercontainer {
 		font-size: 16px;
 	}
 
+	section.section-funcionamiento .container-funcionamiento figure img.last {
+		left: 70%;
+	}
+
 	section.section-funcionamiento .container-funcionamiento div button {
 		width: 100%;
 		font-size: 15px;
@@ -1752,8 +1804,9 @@ footer .footercontainer {
 	}
 
 	section.section-testimonios .container > p {
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 30px;
+		text-align: center;
 	}
 
 

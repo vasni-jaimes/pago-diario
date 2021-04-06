@@ -59,6 +59,16 @@ const poup_empresas = document.querySelector('div.poup-empresas .close');
 if (poup_empresas) {
 	poup_empresas.addEventListener('click', function(e) {
 		document.querySelector('.poup-empresas').style.display = 'none';
+
+		document.querySelector('form[name="form_empresas"]').reset();
+	})
+}
+
+
+const poup_video = document.querySelector('div.poup-videoyt .close');
+if (poup_video) {
+	poup_video.addEventListener('click', function(e) {
+		document.querySelector('.poup-videoyt').style.display = 'none';
 	})
 }
 
@@ -79,6 +89,7 @@ const poup_empleado = document.querySelector('div.poup-colaboradores .close');
 if (poup_empleado) {
 	poup_empleado.addEventListener('click', function(e) {
 		document.querySelector('.poup-colaboradores').style.display = 'none';
+		document.querySelector('form[name="form_empleados"]').reset();
 	})
 }
 
@@ -107,6 +118,17 @@ if (form_empresas) {
 }
 
 
+const funcionamiento = document.querySelector('.container-funcionamiento figure img.last');
+if (funcionamiento) {
+	funcionamiento.addEventListener('click', function(e) {
+		e.preventDefault();
+		$(".poup-videoyt").css('display', 'flex');
+	})
+}
+
+
+
+
 function validarFormEmpleados(e) {
 	e.preventDefault();
 
@@ -121,6 +143,7 @@ function validarFormEmpleados(e) {
 	let nombre = document.querySelector('form[name="form_empleados"] input[name="nombre"]');
 	let email = document.querySelector('form[name="form_empleados"] input[name="email"]');
 	let telefono = document.querySelector('form[name="form_empleados"] input[name="telefono"]');
+	let terminos = document.querySelector('form[name="form_empleados"] input[name="terminos"]');
 
 	/* STATUS */
 	let error_videos = false;
@@ -143,6 +166,11 @@ function validarFormEmpleados(e) {
 
 	if (telefono.value == '') {
 		telefono.classList.add('has-error');
+		error_videos = true;
+	}
+
+	if (terminos.checked == false) {
+		terminos.classList.add('has-error');
 		error_videos = true;
 	}
 
@@ -175,7 +203,7 @@ function validarFormEmpresas(e) {
 	let email = document.querySelector('form[name="form_empresas"] input[name="email"]');
 	let telefono = document.querySelector('form[name="form_empresas"] input[name="telefono"]');
 	let puesto = document.querySelector('form[name="form_empresas"] input[name="puesto"]');
-	let empleados = document.querySelector('form[name="form_empresas"] input[name="empleados"]');
+	let terminos = document.querySelector('form[name="form_empresas"] input[name="terminos"]');
 
 	/* STATUS */
 	let error_videos = false;
@@ -206,8 +234,8 @@ function validarFormEmpresas(e) {
 		error_videos = true;
 	}
 
-	if (empleados.value == '') {
-		empleados.classList.add('has-error');
+	if (terminos.checked == false) {
+		terminos.classList.add('has-error');
 		error_videos = true;
 	}
 
