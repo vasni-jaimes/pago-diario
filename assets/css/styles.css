@@ -1737,6 +1737,7 @@ footer .footercontainer {
 	section.quepago .container div {
 		width: 100%;
 		margin-bottom: 80px;
+		padding-left: 0;
 	}
 
 	section.quepago .container div h2 {
@@ -1792,11 +1793,11 @@ footer .footercontainer {
 	section.section-funcionamiento .container-funcionamiento > div {
 		width: 100%;
 		position: sticky;
-		top: 5px;
+		top: -5px;
 	}
 
 	section.section-funcionamiento .container .container-funcionamiento p {
-		font-size: 16px;
+		font-size: 15px;
 	}
 
 	section.section-funcionamiento .container-funcionamiento figure img.last {
@@ -1812,6 +1813,7 @@ footer .footercontainer {
 	section.section-funcionamiento .container-funcionamiento div div.last,
 	section.section-funcionamiento .container-funcionamiento div div.first {
 		padding-right: 0;
+		padding-top: 0;
 	}
 
 	section.section-funcionamiento .container-funcionamiento div button,
@@ -1837,6 +1839,7 @@ footer .footercontainer {
 
 	section.section-funcionamiento .container-funcionamiento div h3 {
 		text-align: center;
+		font-size: 22px;
 	}
 
 
