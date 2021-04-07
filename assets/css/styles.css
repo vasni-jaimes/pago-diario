@@ -640,7 +640,7 @@ section.section-ondemand .container div.on-demand-imgs figure.img-03 {
 	position: absolute;
 	top: 70%;
 	max-width: 350px;
-	right: 0;
+	right: 20%;
 	transform: translateY(-10%);
 }
 
