@@ -1793,7 +1793,7 @@ footer .footercontainer {
 	section.section-funcionamiento .container-funcionamiento > div {
 		width: 100%;
 		position: sticky;
-		top: 5px;
+		top: 10px;
 	}
 
 	section.section-funcionamiento .container .container-funcionamiento p {
