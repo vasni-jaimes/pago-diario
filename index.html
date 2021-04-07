@@ -3,6 +3,7 @@
 	<head>
 		<title>Pago Diario</title>
 		<meta charset="utf-8">
+		<link rel="shortcut icon" href="assets/img/favicon.png">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -11,6 +12,31 @@
 		<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
 		<meta name="description" content="Pago Diario description">   
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H1XWPTV4KZ"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-H1XWPTV4KZ');
+		</script>
+
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PG498BV');</script>
+		<!-- End Google Tag Manager -->
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG498BV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
 	</head>
 	<body>
 		<header>
@@ -320,7 +346,7 @@
 					</div>
 				</div>
 
-				<p class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;"  data-threshold="0.6">¿Como puedo obtener este beneficio para mi empresa?</p>
+				<p class="horizon empresa" data-animate-in="preset:slideInRightShort;duration:1000ms;"  data-threshold="0.6">¿Como puedo obtener este beneficio para mi empresa?</p>
 			</div>
 		</section>
 		<section class="beneficios-empresas" id="empresas">
@@ -328,8 +354,8 @@
 				<h2 class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6"> Beneficios para empresas </h2>
 				<div class="container-beneficiosemp">
 					<figure class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
-						<img src="assets/img/beneficio_2_em.png"><!-- IMAGEN 5  -->
-						<img src="assets/img/beneficio_1_em.png" class="img-two-be">
+						<img src="assets/img/empresas1.png"><!-- IMAGEN 5  -->
+						<img src="assets/img/empresas2.png" class="img-two-be">
 					</figure>
 					<div class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
 						
@@ -370,8 +396,8 @@
 						<button class="empleado"> Lo quiero en mi empresa </button>
 					</div>
 					<figure class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
-						<img src="assets/img/beneficio_2_em.png"><!-- IMAGEN 6  -->
-						<img src="assets/img/beneficio_1_em.png" class="img-two-bc">
+						<img src="assets/img/emplado1.png"><!-- IMAGEN 6  -->
+						<img src="assets/img/emplado2.png" class="img-two-bc">
 					</figure>
 				</div>
 			</div>
@@ -453,36 +479,48 @@
 		<script type="text/javascript">
 
 			var travel;
+			var scrollPos = 0;
 
 			var mediaqueryList = window.matchMedia("(min-width: 767px)");
 			if (mediaqueryList.matches) {
-			    travel = $("section.section-funcionamiento .container-funcionamiento").offset().top + 130;
+			    travel = $("section.section-funcionamiento .container-funcionamiento").offset().top - 5;
 			}
 			else {
-				travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top + 200;
+				travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top - 5;
 			}
 
 			$(window).resize(function() {
 				var mediaqueryList = window.matchMedia("(min-width: 767px)");
 				if (mediaqueryList.matches) {
-				    travel = $("section.section-funcionamiento .container-funcionamiento").offset().top + 130;
+				    travel = $("section.section-funcionamiento .container-funcionamiento").offset().top - 5;
 				}
 				else {
-					travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top + 200;
+					travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top - 5;
 				}
 			});
 
-
 			$(window).scroll(function () {
+
 				if ($(window).scrollTop() >= travel) {
 					$('section.section-funcionamiento .container-funcionamiento div div.first').css('display', 'none');
-					$('section.section-funcionamiento .container-funcionamiento div div.last').fadeIn(400);
+					$('section.section-funcionamiento .container-funcionamiento div div.last').fadeIn(300);
 				}
 				else {
 					$('section.section-funcionamiento .container-funcionamiento div div.last').css('display', 'none');
-					$('section.section-funcionamiento .container-funcionamiento div div.first').fadeIn(400);
+					$('section.section-funcionamiento .container-funcionamiento div div.first').fadeIn(300);
 				}
 			});
+
+
+
+			var observer = new IntersectionObserver(function([e]) {
+				//e.target.style.background = "red";
+			}, 
+			{
+			  rootMargin: '-1px 0px 0px 0px',
+			});
+
+			observer.observe(document.querySelector("section.section-funcionamiento .container-funcionamiento"));
 		
 
 

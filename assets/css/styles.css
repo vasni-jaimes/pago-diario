@@ -474,8 +474,9 @@ section.quepago {
 
 
 section.quepago .container div {
-	width: 40%;
+	width: 50%;
 	padding-top: 20px;
+	padding-left: 60px;
 }
 
 section.quepago .container {
@@ -498,7 +499,7 @@ section.quepago .container figure.background-pd_blue img {
 }
 
 section.quepago .container figure.diario-home {
-	width: 60%;
+	width: 50%;
 	text-align: center;
 }
 
@@ -662,7 +663,7 @@ section.section-funcionamiento .container {
 section.section-funcionamiento .container-funcionamiento {
 	display: flex;
 	position: sticky;
-	top: 30px;
+	top: 5px;
 }
 
 
@@ -675,6 +676,12 @@ section.section-funcionamiento .container-funcionamiento > div {
 section.section-funcionamiento .container-funcionamiento div div.last {
 	display: none;
 	padding-top: 70px;
+	padding-right: 70px;
+}
+
+section.section-funcionamiento .container-funcionamiento div div.first {
+	padding-top: 70px;
+	padding-right: 70px;
 }
 
 
@@ -784,6 +791,7 @@ section.section-testimonios .container > p {
 	font-size: 26px;
 	line-height: 37px;
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 section.section-testimonios .container .titulo-testimonios {
@@ -906,6 +914,7 @@ section.beneficios-empresas .container .container-beneficiosemp div {
 	width: 50%;
 	padding-left: 40px;
 	padding-top: 30px;
+	padding-right: 70px;
 }
 
 section.beneficios-empresas .container .container-beneficiosemp div button {
@@ -969,6 +978,7 @@ section.beneficios-colab .container .container-beneficioscolab div {
 	width: 50%;
 	padding-top: 55px;
 	padding-right: 20px;
+	padding-left: 70px;
 }
 
 section.beneficios-colab .container .container-beneficioscolab div p:first-child {
@@ -1530,10 +1540,6 @@ footer .footercontainer {
 		font-size: 30px;
 	}
 
-	section.beneficios-empresas .container .container-beneficiosemp div p {
-		font-size: 20px;
-	}
-
 	section.beneficios-empresas .container .container-beneficiosemp div button {
 		width: 100%;
 	}
@@ -1548,10 +1554,6 @@ footer .footercontainer {
 
 	section.beneficios-colab .container h2 {
 		font-size: 30px;
-	}
-
-	section.beneficios-colab .container .container-beneficioscolab div p {
-		font-size: 20px;
 	}
 
 	section.beneficios-colab .container .container-beneficioscolab div button {
@@ -1790,7 +1792,7 @@ footer .footercontainer {
 	section.section-funcionamiento .container-funcionamiento > div {
 		width: 100%;
 		position: sticky;
-		top: 30px;
+		top: 5px;
 	}
 
 	section.section-funcionamiento .container .container-funcionamiento p {
@@ -1805,6 +1807,11 @@ footer .footercontainer {
 		width: 100%;
 		font-size: 15px;
 		letter-spacing: 0;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div div.last,
+	section.section-funcionamiento .container-funcionamiento div div.first {
+		padding-right: 0;
 	}
 
 	section.section-funcionamiento .container-funcionamiento div button,
@@ -1953,6 +1960,7 @@ footer .footercontainer {
 	section.beneficios-empresas .container .container-beneficiosemp div {
 		width: 100%;
 		padding-left: 0;
+		padding-right: 0;
 	}
 
 	section.beneficios-empresas .container .container-beneficiosemp div p {
@@ -1986,6 +1994,7 @@ footer .footercontainer {
 
 	section.beneficios-colab .container .container-beneficioscolab div {
 		width: 100%;
+		padding-left: 0;
 	}
 
 	section.beneficios-colab .container .container-beneficioscolab figure {

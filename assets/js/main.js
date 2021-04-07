@@ -43,7 +43,7 @@ if (itemMenu) {
 
 
 //CLICK PARA ABRIR UN POPUP EMPRESAS
-const quepago = document.querySelectorAll('button.empresa');
+const quepago = document.querySelectorAll('button.empresa, p.empresa');
 if (quepago) {
 	for (var i = 0; i <= quepago.length - 1; i++) {
 		quepago[i].addEventListener('click', function(e) {
