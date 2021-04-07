@@ -113,33 +113,37 @@
 						<img src="assets/img/scroll.png"><!-- IMAGEN 2 -->
 						<img src="assets/img/play.png" class="last">
 					</figure>
-					<div class="horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
-						<h3>El nuevo beneficio empresarial<br> que te hará ahorrar miles en rotación</h3>
-						<p>Pago Diario, la app de salario on-demand que te permite disponer del salario ya trabajado de forma inmediata, con una comisión fija. </p>
-						<p> <strong> Disminuye la rotación en tu empresa y muéstrate como una empresa innovadora con inversión </strong> </p>
+					<div  data-animate-in="preset:slideInUpShort;duration:1000ms;delay:300ms;" data-threshold="0.6">
+						<div class="first">
+							<h3>El nuevo beneficio empresarial<br> que te hará ahorrar miles en rotación</h3>
+							<p>Pago Diario, la app de salario on-demand que te permite disponer del salario ya trabajado de forma inmediata, con una comisión fija. </p>
+							<p> <strong> Disminuye la rotación en tu empresa y muéstrate como una empresa innovadora con inversión </strong> </p>
 
-						<p>- No es préstamo, no genera intereses.</p>
-						<p>- Sin costo para tu empresa.</p>
-						<p>- Sin costo por descarga para tus colaboradores.</p>
-						<p>- Movimientos seguros y verificados.</p>
-						<p>- Asistencia personalizada.</p>
+							<p>- No es préstamo, no genera intereses.</p>
+							<p>- Sin costo para tu empresa.</p>
+							<p>- Sin costo por descarga para tus colaboradores.</p>
+							<p>- Movimientos seguros y verificados.</p>
+							<p>- Asistencia personalizada.</p>
 
-						<a href="#ondemand"> Más beneficios </a>
+							<a href="#ondemand"> Más beneficios </a>
+						</div>
 
+						<div class="last">
+							<h3>¿Como funciona?</h3>
+							<p>Con Pago Diario tus colaboradores podrán retirar el monto correspondiente a sus días ya trabajados de forma inmediata, 24/7. </p>
 
-						<!-- <h3>Hellow</h3>
-						<p>Pago Diario, la app de salario on-demand que te permite disponer del salario ya trabajado de forma inmediata, con una comisión fija. </p>
-						<p> <strong> Disminuye la rotación en tu empresa y muéstrate como una empresa innovadora con inversión </strong> </p>
+							<p>1. Descarga de app y registro</p>
+							<p>2.  Disposición de salario trabajado</p>
+							<p>3. Recepción de dinero de forma  <br>inmediata  en la cuenta de nómina</p>
 
-						<p>- No es préstamo, no genera intereses.</p>
-						<p>- Sin costo para tu empresa.</p>
-						<p>- Sin costo por descarga para tus colaboradores.</p>
-						<p>- Movimientos seguros y verificados.</p>
-						<p>- Asistencia personalizada.</p>
-
-						<a href="#ondemand"> hola </a> -->
+							<button class="empresa"> Implemente este beneficio en tu empresa </button>
+						</div>
 					</div>
+
+					<div class="contaiter-parallax d_entro"></div>
+
 				</div>
+				<div class="contaiter-parallax f_uera"></div>
 			</div>
 		</section>
 
@@ -376,7 +380,7 @@
 			<div class="footercontainer flex">
 				<div class="img-celular">
 					<figure>
-						<img src="assets/img/iphonepro.png"><!-- IMAGEN 8 FOOTER TELEFONO  -->
+						<img src="assets/img/pixlr-bg-result.png"><!-- IMAGEN 8 FOOTER TELEFONO  -->
 					</figure>
 				</div>
 				<div class="container-infocontacto">
@@ -446,5 +450,41 @@
 		<script type="text/javascript" src="assets/slick/slick.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
 		<script type="text/javascript" src="assets/js/timber.master.min.js"></script>
-	</body>
+		<script type="text/javascript">
+
+			var travel;
+
+			var mediaqueryList = window.matchMedia("(min-width: 767px)");
+			if (mediaqueryList.matches) {
+			    travel = $("section.section-funcionamiento .container-funcionamiento").offset().top + 130;
+			}
+			else {
+				travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top + 200;
+			}
+
+			$(window).resize(function() {
+				var mediaqueryList = window.matchMedia("(min-width: 767px)");
+				if (mediaqueryList.matches) {
+				    travel = $("section.section-funcionamiento .container-funcionamiento").offset().top + 130;
+				}
+				else {
+					travel = $("section.section-funcionamiento .container-funcionamiento > div").offset().top + 200;
+				}
+			});
+
+
+			$(window).scroll(function () {
+				if ($(window).scrollTop() >= travel) {
+					$('section.section-funcionamiento .container-funcionamiento div div.first').css('display', 'none');
+					$('section.section-funcionamiento .container-funcionamiento div div.last').fadeIn(400);
+				}
+				else {
+					$('section.section-funcionamiento .container-funcionamiento div div.last').css('display', 'none');
+					$('section.section-funcionamiento .container-funcionamiento div div.first').fadeIn(400);
+				}
+			});
+		
+
+
+		</script>
 </html>

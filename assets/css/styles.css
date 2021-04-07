@@ -488,7 +488,7 @@ section.quepago .container figure.background-pd_blue {
 	position: absolute;
 	top: -257px;
 	left: 0;
-	width: 63%;
+	width: 72vw;
 	z-index: -1;
 	height: 930px;
 }
@@ -631,16 +631,16 @@ section.section-ondemand .container div.on-demand-imgs figure.img-01 {
 section.section-ondemand .container div.on-demand-imgs figure.img-02 {
 	position: absolute;
 	top: 238px;
-	width: 65%;
 	left: -73px;
+	max-width: 290px;
 }
 
 section.section-ondemand .container div.on-demand-imgs figure.img-03 {
 	position: absolute;
-	top: 50%;
-	width: 70%;
+	top: 70%;
+	max-width: 350px;
 	right: 0;
-	transform: translateY(-50%);
+	transform: translateY(-10%);
 }
 
 section.section-funcionamiento {
@@ -661,15 +661,20 @@ section.section-funcionamiento .container {
 
 section.section-funcionamiento .container-funcionamiento {
 	display: flex;
+	position: sticky;
+	top: 30px;
 }
 
 
 
-section.section-funcionamiento .container-funcionamiento div {
+section.section-funcionamiento .container-funcionamiento > div {
 	width: 50%;
-	overflow: scroll;
-	height: 600px;
-	scrollbar-width: none;  /* Firefox */
+}
+
+
+section.section-funcionamiento .container-funcionamiento div div.last {
+	display: none;
+	padding-top: 70px;
 }
 
 
@@ -694,6 +699,22 @@ section.section-funcionamiento .container-funcionamiento figure img {
 	left: -110px;
 }
 
+.contaiter-parallax {
+	width: 100%;
+	height: 500px;
+	background: red;
+	opacity: 0;
+	z-index: -1;
+}
+
+.d_entro {
+	display: none;
+}
+
+.f_uera {
+	display: block;
+}
+
 section.section-funcionamiento .container-funcionamiento figure img.last {
 	position: absolute;
 	width: 90px;
@@ -714,6 +735,12 @@ section.section-funcionamiento .container-funcionamiento div p {
 }
 
 
+section.section-funcionamiento .container-funcionamiento div button {
+	font-size: 15px !important;
+	letter-spacing: 0 !important;
+}
+
+section.section-funcionamiento .container-funcionamiento div button,
 section.section-funcionamiento .container-funcionamiento div a {
 	margin-top: 30px;
 	height: 47px;
@@ -734,6 +761,7 @@ section.section-funcionamiento .container-funcionamiento div a {
 	line-height: 45px;
 }
 
+section.section-funcionamiento .container-funcionamiento div button:hover,
 section.section-funcionamiento .container-funcionamiento div a:hover {
 	background-color: #FFF;
 	color: #018FC0;
@@ -908,7 +936,7 @@ section.beneficios-empresas .container .container-beneficiosemp div p:first-chil
 section.beneficios-empresas .container .container-beneficiosemp div p {
 	color: #666;
 	font-family: Montserrat;
-	font-size: 22px;
+	font-size: 17px;
 	line-height: 25px;
 	margin-bottom: 30px;
 }
@@ -954,7 +982,7 @@ section.beneficios-colab .container .container-beneficioscolab div p:nth-child(5
 section.beneficios-colab .container .container-beneficioscolab div p {
 	color: #666;
 	font-family: Montserrat;
-	font-size: 22px;
+	font-size: 17px;
 	line-height: 32px;
 	margin-bottom: 17px;
 }
@@ -1053,6 +1081,7 @@ footer .container-infocontacto div p {
 	font-family: Montserrat;
 	line-height: 33px;
 	margin-bottom: 15px;
+	font-size: 17px;
 }
 
 footer .container-infocontacto div p i {
@@ -1062,7 +1091,7 @@ footer .container-infocontacto div p i {
 footer .container-infocontacto div p a.activo-icon {
 	text-decoration: none;
 	color: #fff;
-	font-size: 23px;
+	font-size: 17px;
 }
 
 
@@ -1605,6 +1634,10 @@ footer .footercontainer {
     	padding-right: 20px;
     }
 
+    body > header:nth-child(1) > div:nth-child(1) > a:nth-child(1) > figure:nth-child(1) {
+    	width: 200px;
+    }
+
 	.burger {
     	display: flex;
     }
@@ -1745,6 +1778,8 @@ footer .footercontainer {
 
 	section.section-funcionamiento .container-funcionamiento {
 		flex-direction: column;
+		position: relative;
+		top: 0px;
 	}
 
 	section.section-funcionamiento .container-funcionamiento figure {
@@ -1752,8 +1787,10 @@ footer .footercontainer {
 		margin-bottom: 50px;
 	}
 
-	section.section-funcionamiento .container-funcionamiento div {
+	section.section-funcionamiento .container-funcionamiento > div {
 		width: 100%;
+		position: sticky;
+		top: 30px;
 	}
 
 	section.section-funcionamiento .container .container-funcionamiento p {
@@ -1767,6 +1804,24 @@ footer .footercontainer {
 	section.section-funcionamiento .container-funcionamiento div button {
 		width: 100%;
 		font-size: 15px;
+		letter-spacing: 0;
+	}
+
+	section.section-funcionamiento .container-funcionamiento div button,
+	section.section-funcionamiento .container-funcionamiento div a {
+		width: 100%;
+	}
+
+	.contaiter-parallax {
+		height: 300px;
+	}
+
+	.f_uera {
+		display: none;
+	}
+
+	.d_entro {
+		display: block;
 	}
 
 	section.section-funcionamiento .container-funcionamiento figure img {
