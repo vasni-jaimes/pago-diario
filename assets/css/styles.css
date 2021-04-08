@@ -61,6 +61,10 @@ header .flex {
     padding-right: 20px;
 }
 
+header .container svg {
+	width: 210px;
+}
+
 header nav {
 	display: flex;
 	align-items: center;
@@ -1042,7 +1046,7 @@ footer {
 	padding-top: 50px;
 }
 
-footer .container-infocontacto figure{
+footer .container-infocontacto svg {
 	margin-bottom: 45px;
 	width: 300px;
 	padding-left: 65px;
@@ -1344,7 +1348,7 @@ footer .footercontainer {
 		margin: 0 auto;
 	}
 
-	footer .container-infocontacto figure {
+	footer .container-infocontacto svg {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 40px;
@@ -1608,7 +1612,7 @@ footer .footercontainer {
 		margin: 0 auto;
 	}
 
-	footer .container-infocontacto figure {
+	footer .container-infocontacto svg {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 40px;
@@ -1637,7 +1641,7 @@ footer .footercontainer {
     }
 
     body > header:nth-child(1) > div:nth-child(1) > a:nth-child(1) > figure:nth-child(1) {
-    	width: 200px;
+    	width: 170px
     }
 
 	.burger {
@@ -1717,8 +1721,6 @@ footer .footercontainer {
 	/* SECTION 1 */
 
 	section.quepago {
-		padding-left: 20px;
-		padding-right: 20px;
 		margin-bottom: 200px;
 	}
 
@@ -1801,7 +1803,9 @@ footer .footercontainer {
 	}
 
 	section.section-funcionamiento .container-funcionamiento figure img.last {
+		width: 80px;
 		left: 70%;
+		top: 35%;
 	}
 
 	section.section-funcionamiento .container-funcionamiento div button {
@@ -1834,7 +1838,7 @@ footer .footercontainer {
 	}
 
 	section.section-funcionamiento .container-funcionamiento figure img {
-		left: 0px;
+		left: -30px;
 	}
 
 	section.section-funcionamiento .container-funcionamiento div h3 {
@@ -1849,6 +1853,10 @@ footer .footercontainer {
 		flex-direction: column;
 	}
 
+	section.section-ondemand {
+		margin-bottom: 200px;
+	}
+
 	section.section-ondemand .container div.on-demand-texto {
 		width: 100%;
 		padding-left: 20px;
@@ -1861,7 +1869,7 @@ footer .footercontainer {
 	}
 
 	section.section-ondemand .container div.on-demand-texto p.texto-tendencia {
-		font-size: 21px;
+		font-size: 18px;
 		letter-spacing: 4px;
 	}
 
@@ -1871,7 +1879,7 @@ footer .footercontainer {
 	}
 
 	section.section-ondemand .container div.on-demand-texto h2 {
-		font-size: 40px;
+		font-size: 30px;
 		letter-spacing: 8px;
 		line-height: 50px;
 	}
@@ -1905,6 +1913,7 @@ footer .footercontainer {
 	section.section-testimonios {
 		padding-left: 20px;
 		padding-right: 20px;
+		margin-bottom: 200px;
 	}
 
 	section.section-testimonios .container {
@@ -1917,9 +1926,8 @@ footer .footercontainer {
 	}
 
 	section.section-testimonios .container .titulo-testimonios h2 {
-		font-size: 20px;
+		font-size: 25px;
 		text-align: center;
-		margin-bottom: 60px;
 		letter-spacing: 8px;
 	}
 
@@ -1945,10 +1953,11 @@ footer .footercontainer {
 	section.beneficios-empresas {
 		padding-right: 20px;
 		padding-left: 20px;
+		margin-bottom: 200px;
 	}
 
 	section.beneficios-empresas .container h2 {
-		font-size: 20px;
+		font-size: 25px;
 		letter-spacing: 8px;
 	}
 
@@ -1984,10 +1993,11 @@ footer .footercontainer {
 	section.beneficios-colab {
 		padding-right: 20px;
 		padding-left: 20px;
+		margin-bottom: 200px;
 	}
 
 	section.beneficios-colab .container h2 {
-		font-size: 20px;
+		font-size: 25px;
 		letter-spacing: 8px;
 	}
 
@@ -2086,7 +2096,7 @@ footer .footercontainer {
 		padding: 0;
 	}
 
-	footer .container-infocontacto figure {
+	footer .container-infocontacto svg {
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 0px;
